@@ -14,7 +14,7 @@ index.html
 chat.html
     uma página contendo a interface do chat
     input para mensagem
-    e uma div com altura fixa e scroll (css: overflox)
+    e uma div com altura fixa e scroll (css: overflow)
 
 recebe.php
     que recebe o nome do user e a mensagem via get e salva no bd
