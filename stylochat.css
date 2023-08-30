@@ -1,16 +1,47 @@
-body{
-    margin: 100;
+/* Zerar alguns estilos padrão */
+body, html {
+    margin: 0;
     padding: 0;
-    background-color: teal;
-}
-
-.container{
-    overflow: scroll;
-    text-align: center;
-    background-color: beige;
-    padding: 0;
-    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Centralizar conteúdo verticalmente */
+  .container {
     display: flex;
-    max-width: 80%;
-}
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilizar o rótulo */
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilizar o input do chat */
+  .chat {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-top: 5px; /* Espaço entre o rótulo e o input */
+  }
+  
+  /* Estilizar o texto de placeholder no input do chat */
+  .chat::placeholder {
+    color: #999;
+  }
+  
+  /* Destacar o input do chat ao receber foco */
+  .chat:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
