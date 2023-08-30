@@ -7,9 +7,9 @@ $mensagem = filter_input(INPUT_POST, 'mensagem', FILTER_SANITIZE_EMAIL);
 
 
 
-$sql = "INSERT INTO usuario (nome, email, serie, telefone) VALUES ('$nome','$email','$serie','$celular')";
+$sql = "INSERT INTO usuario (nome, mensagem) VALUES ('$nome','$mensagem')";
 
 $conexao->query($sql);
 
 #redireciona
-header('Location:../feito.html');
+header('Location:../index.html');
