@@ -1,2 +1,6 @@
 # chat2023
-Atividade programação WEB 
+Atividade programação WEB  
+- HTML
+- CSS
+- PHP
+- JS
