@@ -8,24 +8,24 @@
 /* Estilo do corpo da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-image: url(images/fundo2.png);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  margin: auto;
 }
 
 .container{
-  width: 100vh;
-  height: 100vh;
+    
 }
 
 .visualizar{
-  width: 100vh;
+  margin-top: 20px;
+  width: 150vh;
   height: 80vh;
-  background-color: aquamarine;
+  background-color: rgb(255, 255, 255);
+  border: solid #007369  3px;
 }
 
 
