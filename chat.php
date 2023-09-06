@@ -11,22 +11,14 @@
 <body>
 
         <img src="images/dog rebaixado.webp" alt="">
-        <form action="actions/recebe.php">
-        <?php
-                $nome= filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
-        
-        ?>
-                <div class="container">
-                        <input type="hidden" name="nome" value="<?= $nome ?>">
-                        <label for="mensagem">Digite a mensagem: </label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
-                </div>
+       <div class="container">
+                <label for="mensagem">Digite a mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
+       </div>
 
-                <div class="container">
-                        <button>ENVIAR!</button>
-                </div>
-        </form>
-
+       <div class="container">
+                <button>ENVIAR!</button>
+       </div>
 </body>
 
 </html>

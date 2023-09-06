@@ -8,12 +8,19 @@
 /* Estilo do corpo da página */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
+}
+
+.chat {
+   width: 90%;
+   height: 90%;
+   background-color: white;
+   box-sizing: border-box;
 }
 
 /* Estilo do container principal */
