@@ -13,7 +13,11 @@
         <div class="chat">
                 <img src="images/dog rebaixado.jpg" alt="">
                 <form action="actions/recebe.php">
+                        <?php
+                        $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+                        ?>
                         <div class="container">
+                                <input type="hidden" name="nome" value="<?= $nome ?>">
                                 <textarea name="mensagem" id="mensagem" cols="400" rows="8" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
                         </div>
                         <div class="container">
@@ -25,4 +29,4 @@
 
 </body>
 
-</html> 
+</html>
