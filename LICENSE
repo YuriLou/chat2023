@@ -1,2 +1,10 @@
-git config --global user.email "viniciusnael@gmail.com"
-git config --global user.name "NaelTakamoto"
+const nome = document.getElementById("nome");
+const mensagem = document.getElementById("mensagem");
+const form  = document.querySelector("form");
+
+form.addEventListener("submit ", function(e){
+    e.preventDefault();
+});
+function enviar(){
+    
+}
