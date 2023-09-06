@@ -7,11 +7,8 @@
         <link rel="stylesheet" href="stylochat.css">
 </head>
 <body>
-       <div class="container">
-                <label for="user">Nome de usuário:</label>
-                <textarea name="username" id="username" cols="30" rows="10" placeholder="Escreva aqui o nome de usuário"></textarea>
-       </div> 
 
+        <img src="images/dog rebaixado.webp" alt="">
        <div class="container">
                 <label for="mensagem">Digite a mensagem: </label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
