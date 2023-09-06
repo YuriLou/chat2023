@@ -10,19 +10,21 @@
 
 <body>
 
-        <div class="chat">
-                <img src="images/dog rebaixado.jpg" alt="">
+        <div class="container">
                 <form action="actions/recebe.php">
                         <?php
                         $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                         ?>
-                        <div class="container">
+                        
+                        <div class="visualizar">
+
+                        </div>
+                        <div class="mensagens">
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
-                                <textarea name="mensagem" id="mensagem" cols="400" rows="8" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
+                                <input type="text" id="mensagem">
+                                <button type="submit"> Sand!</button>
                         </div>
-                        <div class="container">
-                                <button>ENVIAR!</button>
-                        </div>
+                
                 </form>
 
         </div>

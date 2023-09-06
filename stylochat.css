@@ -22,15 +22,10 @@ body {
   height: 100vh;
 }
 
-.mensagens{
+.visualizar{
   width: 100vh;
   height: 80vh;
   background-color: aquamarine;
 }
 
 
-.mensagem{
-  width: 80vh;
-  height: 20vh;
-  background-color: blue;
-}
