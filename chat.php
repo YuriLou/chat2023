@@ -17,7 +17,7 @@
                         ?>
                         
                         <div class="visualizar">
-
+                          
                         </div>
                         <div class="mensagens">
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
@@ -29,6 +29,12 @@
 
         </div>
 
+        <script>
+                function rolar() {
+                        let chatDiv = document.getElementById("visualizar");
+                        chatDiv.scrollTop = chatDiv.scrollHeight;
+                }
+        </script>
 </body>
 
 </html>
