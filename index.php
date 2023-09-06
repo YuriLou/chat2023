@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="index.php" method="POST">
+        <form action="chat.php" method="POST">
             <label for="username">Nome de usuário:</label>
             <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
 
