@@ -2,7 +2,7 @@
 # actions/categoria_salvar.php
 
 require '../includes/conexao.php';
-$nome = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 $mensagem = filter_input(INPUT_POST, 'mensagem', FILTER_SANITIZE_EMAIL);
 
 
