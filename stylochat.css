@@ -1,47 +1,57 @@
-/* Zerar alguns estilos padrão */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Centralizar conteúdo verticalmente */
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  /* Estilizar o rótulo */
-  label {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilizar o input do chat */
-  .chat {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    margin-top: 5px; /* Espaço entre o rótulo e o input */
-  }
-  
-  /* Estilizar o texto de placeholder no input do chat */
-  .chat::placeholder {
-    color: #999;
-  }
-  
-  /* Destacar o input do chat ao receber foco */
-  .chat:focus {
-    outline: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilo do container principal */
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo das caixas de texto e botão */
+textarea, button {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Estilo das caixas de texto */
+textarea {
+  height: 100px;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo das labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
