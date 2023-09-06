@@ -12,6 +12,7 @@
 
         <div class="chat">
          <img src="images/dog rebaixado.jpg" alt="">
+         <form action="actions/ler.php">
          <div class="container">
                 
                 <textarea name="mensagem" id="mensagem" cols="400" rows="8" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
@@ -20,6 +21,8 @@
          <div class="container">
                 <button>ENVIAR!</button>
          </div>
+         </form>
+         
         </div>
 
 </body>
