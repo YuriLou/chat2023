@@ -17,56 +17,20 @@ body {
   margin: auto;
 }
 
-.chat {
-  width: 90%;
-  height: 90%;
-  background-color: white;
-  box-sizing: border-box;
+.container{
+  width: 100vh;
+  height: 100vh;
 }
 
-/* Estilo do container principal */
-.container {
-  text-align: center;
-  margin: auto;
+.mensagens{
+  width: 100vh;
+  height: 80vh;
+  background-color: aquamarine;
 }
 
-/* Estilo das caixas de texto e botão */
-textarea, button {
-  padding: 10px;
-  width: 100%;
-  max-width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 5px 0;
-}
 
-/* Estilo das caixas de texto */
-textarea {
-  height: 100px;
-}
-
-/* Estilo do botão */
-button {
-  background-color: #97ff93;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #3da339;
-  color: #fff;
-}
-
-/* Estilo das labels */
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.chat img{
-  max-width: 200px;
-  margin: auto;
-  text-align: center;
+.mensagem{
+  width: 80vh;
+  height: 20vh;
+  background-color: blue;
 }
