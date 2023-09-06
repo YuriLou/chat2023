@@ -65,6 +65,8 @@ label {
   font-weight: bold;
 }
 
-img{
+.chat img{
   max-width: 200px;
+  margin: auto;
+  text-align: center;
 }

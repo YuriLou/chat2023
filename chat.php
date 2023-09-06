@@ -11,7 +11,7 @@
 <body>
 
         <div class="chat">
-         <img src="images/dog rebaixado.webp" alt="">
+         <img src="images/dog rebaixado.jpg" alt="">
          <div class="container">
                 
                 <textarea name="mensagem" id="mensagem" cols="400" rows="8" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
