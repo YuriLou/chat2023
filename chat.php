@@ -15,16 +15,16 @@
                         <?php
                         $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                         ?>
-                        
+
                         <div class="visualizar">
-                          
+
                         </div>
                         <div class="mensagens">
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
                                 <input type="text" id="mensagem">
                                 <button type="submit"> Sand!</button>
                         </div>
-                
+
                 </form>
 
         </div>
@@ -34,6 +34,18 @@
                         let chatDiv = document.getElementById("visualizar");
                         chatDiv.scrollTop = chatDiv.scrollHeight;
                 }
+                rolar();
+                const nome = document.getElementById("nome");
+                const mensagem = document.getElementById("mensagem");
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit ", function(e) {
+                        e.preventDefault();
+                });
+
+                function enviar() {
+
+                };
         </script>
 </body>
 
