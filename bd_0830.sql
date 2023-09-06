@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Ago-2023 às 21:36
+-- Tempo de geração: 06-Set-2023 às 19:52
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.0.28
 
@@ -31,7 +31,7 @@ CREATE TABLE `mensagens` (
   `id` int(4) NOT NULL,
   `nome` varchar(50) NOT NULL,
   `mensagem` text NOT NULL,
-  `datahora` date NOT NULL
+  `datahora` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
