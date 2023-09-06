@@ -11,4 +11,4 @@ $sql = "INSERT INTO mensagens (nome, mensagem) VALUES ('$nome','$mensagem')";
 $conexao->query($sql);
 
 #redireciona
-header('Location:../index.html');
+header('Location:../index.php');
