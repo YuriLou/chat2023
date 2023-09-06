@@ -13,7 +13,7 @@
                 <label for="mensagem">Digite a mensagem: </label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui a mensagem a ser enviada"></textarea>
        </div>
-
+       <input type="hidden" value="a" name="teste">
        <div class="container">
                 <button>ENVIAR!</button>
        </div>
