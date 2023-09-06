@@ -58,3 +58,9 @@ button:hover {
     background-color: #3da339;
     color: #fff;
 }
+
+.login-container img{
+    max-width: 150px;
+    float: left;
+    margin-left:11px ;
+}
