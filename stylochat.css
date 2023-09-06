@@ -18,10 +18,10 @@ body {
 }
 
 .chat {
-   width: 90%;
-   height: 90%;
-   background-color: white;
-   box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 /* Estilo do container principal */
