@@ -12,16 +12,15 @@
 
         <div class="container">
                 <form action="actions/recebe.php">
-                        <?php
-                        $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
-                        ?>
-
                         <div class="visualizar">
 
                         </div>
                         <div class="mensagens">
+                                <?php
+                                $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+                                ?>
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
-                                <input type="text" id="mensagem">
+                                <input type="text" id="mensagem" value="mensagem">
                                 <button type="submit"> Sand!</button>
                         </div>
 
