@@ -9,12 +9,8 @@
 </head>
 
 <body>
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
-                $dataHoraEnvio = date("Y-m-d H:i:s");
-                $nome = $_POST["nome"];
-                $mensagem = $_POST["mensagem"];
-        }
         
+
         <div class="container">
                 <form action="actions/recebe.php">
                         <div class="visualizar">
