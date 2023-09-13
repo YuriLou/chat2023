@@ -65,6 +65,13 @@
 
                         // receber de forma assincrona
                         function receber(){
+                                fetch("actions/ler.php")
+                                .then(function(resposta){
+                                        return resposta.json();
+                                })
+                                .then(function(resposta){
+                                        console.log(resposta);
+                                })
                                 
                         }
                 }
