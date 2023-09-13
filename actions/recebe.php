@@ -10,6 +10,6 @@ if($nome && $mensagem){
     $conexao->query("INSERT INTO mensagens(nome, mensagem, datahora) VALUES ('$nome', '$mensgem', '$data')");
 }
 else{
-    echo 'dados nao enviados '.count($_POST).count($_GET);
+    echo 'Dados nao enviados '.count($_POST).count($_GET);
     print_r($_POST);
 }
