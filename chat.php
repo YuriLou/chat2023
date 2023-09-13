@@ -36,6 +36,8 @@
                         chatDiv.scrollTop = chatDiv.scrollHeight;
                 }
                 rolar();
+
+                
                 const nome = document.getElementById("nome");
                 const mensagem = document.getElementById("mensagem");
                 const form = document.querySelector("form");
@@ -75,12 +77,13 @@
                                                 chatDiv.innerHTML += `Nome: ${r.nome}:`;
                                                 chatDiv.innerHTML += `MSG: ${r.mensagem}`;
                                                 chatDiv.innerHTML+=`<hr>`;
+                                                rolar();
                                         })
                                       
                                 })
 
                         }
-                        setInterval(3000, receber);
+                        setInterval(receber, 3000);
                         receber();
 
                 }
