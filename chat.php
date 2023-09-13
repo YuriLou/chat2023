@@ -46,6 +46,24 @@
                 function enviar() {
 
                 };
+
+                function enviar(){
+                        let data = new FormData();
+                        data.append("mensagem", mensagem.value);
+                        data.append("nome", nome.value);
+
+                        fetch ("recebe.php", {
+                                method:"POST",
+                                body:data
+                        }).then(function(resposta){
+                                if (!resposta.ok){
+                                        alert("não foi possivel enviar")
+                                }
+                                else{
+                                        mensagem.value = "";
+                                }
+                        });
+                }
         </script>
 </body>
 

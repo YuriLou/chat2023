@@ -1,6 +1,6 @@
 <?php
 # actions/categoria_salvar.php
-echo 123;
+
 require '../includes/conexao.php';
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 $mensagem = filter_input(INPUT_POST, 'mensagem', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -11,5 +11,3 @@ $sql = "INSERT INTO mensagens(nome, mensagem, datahora) VALUES ('$nome','$mensag
 
 $conexao->query($sql);
 
-#redireciona
-header('Location:../index.html');
