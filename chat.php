@@ -31,16 +31,16 @@
         </div>
 
         <script>
-                function rolar() {
-                        let chatDiv = document.getElementById("visualizar");
-                        chatDiv.scrollTop = chatDiv.scrollHeight;
-                }
-                rolar();
-
-
+                let chatDiv = document.getElementById("visualizar");
                 const nome = document.getElementById("nome");
                 const mensagem = document.getElementById("mensagem");
                 const form = document.querySelector("form");
+
+                function rolar() {
+
+                        chatDiv.scrollTop = chatDiv.scrollHeight;
+                }
+                rolar();
 
                 form.addEventListener("submit", function(e) {
                         e.preventDefault();
@@ -54,33 +54,33 @@
                         data.append("nome", nome.value);
 
                         fetch("actions/recebe.php", {
-                                method: "POST",
-                                body: data
-                        })
-                        .then(function(resposta) {
-                                if (!resposta.ok) {
-                                        alert("não foi possivel enviar")
-                                } else {
-                                        mensagem.value = "";
-                                }
-                                console.log(resposta);
-                        });
+                                        method: "POST",
+                                        body: data
+                                })
+                                .then(function(resposta) {
+                                        if (!resposta.ok) {
+                                                alert("não foi possivel enviar")
+                                        } else {
+                                                mensagem.value = "";
+                                        }
+                                        console.log(resposta);
+                                });
 
                         // receber de forma assincrona
-                        function receber(){
+                        function receber() {
                                 fetch("actions/ler.php")
-                                .then(function(resposta){
-                                        return resposta.json();
-                                })
-                                .then(function(resposta){
-                                        resposta.forEach(function(r){
-                                                chatDiv.innerHTML += `Nome: ${r.nome}:`;
-                                                chatDiv.innerHTML += `MSG: ${r.mensagem}`;
-                                                chatDiv.innerHTML+=`<hr>`;
-                                                rolar();
+                                        .then(function(resposta) {
+                                                return resposta.json();
                                         })
-                                      
-                                })
+                                        .then(function(resposta) {
+                                                resposta.forEach(function(r) {
+                                                        chatDiv.innerHTML += `Nome: ${r.nome}:`;
+                                                        chatDiv.innerHTML += `MSG: ${r.mensagem}`;
+                                                        chatDiv.innerHTML += `<hr>`;
+                                                        rolar();
+                                                })
+
+                                        })
 
                         }
                         setInterval(receber, 10000);
