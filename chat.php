@@ -9,21 +9,21 @@
 </head>
 
 <body>
-        
+
 
         <div class="container">
-                <form action="actions/recebe.php">
-                        <div class="visualizar">
+                <form action="actions/recebe.php" method="post">
+                        <div class="visualizar" id="visualizar">
 
                         </div>
                         <div class="mensagens">
                                 <?php
                                 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                                 ?>
-                                <input type="hidden" name="nome" value="<?= $nome ?>">
+                                <input type="hidden" name="nome" id="nome" value="<?= $nome ?>">
                                 <input type="text" id="mensagem" name="mensagem">
                                 <button type="submit">Enviar!</button>
-                                
+
                         </div>
 
                 </form>
@@ -40,29 +40,30 @@
                 const mensagem = document.getElementById("mensagem");
                 const form = document.querySelector("form");
 
-                form.addEventListener("submit ", function(e) {
+                form.addEventListener("submit", function(e) {
                         e.preventDefault();
+                        enviar();
                 });
 
 
-                function enviar(){
+                function enviar() {
                         let data = new FormData();
                         data.append("mensagem", mensagem.value);
                         data.append("nome", nome.value);
 
-                        fetch ("recebe.php", {
-                                method:"POST",
-                                body:data
-                        }).then(function(resposta){
-                                if (!resposta.ok){
+                        fetch("actions/recebe.php", {
+                                method: "POST",
+                                body: data
+                        }).then(function(resposta) {
+                                if (!resposta.ok) {
                                         alert("não foi possivel enviar")
-                                }
-                                else{
+                                } else {
                                         mensagem.value = "";
                                 }
-                });
+                                console.log(resposta);
+                        });
 
-                // receber de forma assincrona
+                        // receber de forma assincrona
 
                 }
         </script>
