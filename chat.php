@@ -37,7 +37,7 @@
                 }
                 rolar();
 
-                
+
                 const nome = document.getElementById("nome");
                 const mensagem = document.getElementById("mensagem");
                 const form = document.querySelector("form");
@@ -83,7 +83,7 @@
                                 })
 
                         }
-                        setInterval(receber, 3000);
+                        setInterval(receber, 10000);
                         receber();
 
                 }
