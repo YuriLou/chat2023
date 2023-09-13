@@ -6,8 +6,10 @@ $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 $mensagem = filter_input(INPUT_POST, 'mensagem', FILTER_SANITIZE_SPECIAL_CHARS);
 $data = date("Y-m-d H:i:s");
 
-
-$sql = "INSERT INTO mensagens(nome, mensagem, datahora) VALUES ('$nome','$mensagem', '$data')";
-
-$conexao->query($sql);
-
+if($nome && $mensagem){
+    $conexao->query("INSERT INTO mensagens(nome, mensagem, datahora) VALUES ('$nome', '$mensgem', '$data')");
+}
+else{
+    echo 'dados nao enviados '.count($_POST).count($_GET);
+    print_r($_POST);
+}

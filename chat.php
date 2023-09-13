@@ -59,7 +59,10 @@
                                 else{
                                         mensagem.value = "";
                                 }
-                        });
+                });
+
+                // receber de forma assincrona
+
                 }
         </script>
 </body>
