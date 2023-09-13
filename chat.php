@@ -70,12 +70,17 @@
                                         return resposta.json();
                                 })
                                 .then(function(resposta){
-                                        console.log(resposta);
+                                        resposta.forEach(function(r){
+                                                chatDiv.innerHTML += `Nome: ${r.nome}:`;
+                                                chatDiv.innerHTML += `MSG: ${r.mensagem}`;
+                                                chatDiv.innerHTML+=`<hr>`;
+                                        })
+                                      
                                 })
 
                         }
                         receber();
-                        
+
                 }
         </script>
 </body>
