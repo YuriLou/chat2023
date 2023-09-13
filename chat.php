@@ -72,8 +72,10 @@
                                 .then(function(resposta){
                                         console.log(resposta);
                                 })
-                                
+
                         }
+                        receber();
+                        
                 }
         </script>
 </body>
