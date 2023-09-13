@@ -21,7 +21,7 @@
                                 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                                 ?>
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
-                                <input type="text" id="mensagem" value="mensagem">
+                                <input type="text" id="mensagem" name="mensagem">
                                 <button type="submit"> Enviar!</button>
                         </div>
 
