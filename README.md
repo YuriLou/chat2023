@@ -24,3 +24,10 @@ ler.php
     - select * from mensagem where id>$id
 
 BD: uma tabela que salva id (auto_increment), nome, msg, datahora.
+
+
+Funções:
+Yuri e Moreira: PHP e script
+Yuri: SQL
+Jp e Nael: Design 
+Luz: Logotipo
