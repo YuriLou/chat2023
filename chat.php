@@ -22,7 +22,7 @@
                                 ?>
                                 <input type="hidden" name="nome" value="<?= $nome ?>">
                                 <input type="text" id="mensagem" name="mensagem">
-                                <a href="" type="submit"><img src="images/pitRebaixado.jpeg" alt="send"></a>
+                                
                         </div>
 
                 </form>
