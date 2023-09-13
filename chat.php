@@ -64,7 +64,9 @@
                         });
 
                         // receber de forma assincrona
-
+                        function receber(){
+                                
+                        }
                 }
         </script>
 </body>
