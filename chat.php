@@ -54,7 +54,8 @@
                         fetch("actions/recebe.php", {
                                 method: "POST",
                                 body: data
-                        }).then(function(resposta) {
+                        })
+                        .then(function(resposta) {
                                 if (!resposta.ok) {
                                         alert("não foi possivel enviar")
                                 } else {
