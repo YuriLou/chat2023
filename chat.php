@@ -43,9 +43,6 @@
                         e.preventDefault();
                 });
 
-                function enviar() {
-
-                };
 
                 function enviar(){
                         let data = new FormData();
