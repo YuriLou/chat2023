@@ -11,5 +11,3 @@ $sql = "INSERT INTO mensagens(nome, mensagem, datahora) VALUES ('$nome','$mensag
 
 $conexao->query($sql);
 
-#redireciona
-header('Location:../index.html');
