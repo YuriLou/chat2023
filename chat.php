@@ -72,7 +72,13 @@
                 }
 
                 function receber() {
-                        fetch("actions/ler.php")
+                        let id = 0;
+                        let data = new FormData();
+                        data.append("id", id);
+                        fetch("actions/ler.php",{
+                                method: "POST",
+                                body: data
+                        })
                                 .then(function(resposta) {
                                         return resposta.json();
                                 })
@@ -81,6 +87,7 @@
                                                 let div = document.createElement('div');
                                                 div.innerHTML += `<strong>Nome: ${r.nome}</strong><br>${r.mensagem}`;
                                                 chatDiv.appendChild(div);
+                                                id = r.id;
                                                 rolar();
                                         })
 

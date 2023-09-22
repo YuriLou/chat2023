@@ -6,7 +6,13 @@ $password = '';
 
 $conexao = new PDO('mysql:host=localhost; dbname='.$dbname,$user,$password);
 
-$stmt = $conexao->query("select * from mensagens order by id desc");
+$id = filter_input(INPUT_POST,'id');
+
+
+# Pegar somente as últimas 20
+
+
+$stmt = $conexao->query("select * from mensagens where id>$id order by id desc limit 20");
 $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $dados = array_reverse($dados);
 echo json_encode($dados);
