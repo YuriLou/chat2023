@@ -19,7 +19,7 @@
                 ?>
                 <input type="hidden" name="nome" id="nome" value="<?= $nome ?>">
                 <input type="text" id="mensagem" name="mensagem">
-                <button type="submit">Enviar!</button>
+                <button type="submit"><div class="enviar"></div></button>
             </div>
         </form>
     </div>
