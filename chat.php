@@ -74,16 +74,15 @@
                                         })
                                         .then(function(resposta) {
                                                 resposta.forEach(function(r) {
-                                                        chatDiv.innerHTML += `Nome: ${r.nome}:`;
-                                                        chatDiv.innerHTML += `MSG: ${r.mensagem}`;
-                                                        chatDiv.innerHTML += `<hr>`;
+                                                        let div=document.createElement('div');
+                                                        div.innerHTML += `<strong>Nome: ${r.nome}</strong><br>${r.mensagem}`;
                                                         rolar();
                                                 })
 
                                         })
 
                         }
-                        setInterval(receber, 10000);
+                        setInterval(receber, 30000);
                         receber();
 
                 }
