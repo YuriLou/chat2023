@@ -47,7 +47,7 @@
                         enviar();
                 });
 
-
+                
                 function enviar() {
                         let data = new FormData();
                         data.append("mensagem", mensagem.value);
@@ -70,9 +70,8 @@
 
 
                 }
-
+                let id = 0;
                 function receber() {
-                        let id = 0;
                         let data = new FormData();
                         data.append("id", id);
                         fetch("actions/ler.php",{
