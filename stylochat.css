@@ -6,12 +6,12 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 800px; 
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .mensagens {
@@ -32,36 +32,85 @@ body {
 }
 
 button[type="submit"] {
-  background-color: #8774e1;
-  color: #f0f0f0;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 3px;
   padding: 8px 15px;
   cursor: pointer;
   transition: background-color 0.3s;
-
 }
 
 button[type="submit"]:hover {
-  background-color: #7666c2;
-  
+  background-color: #0056b3;
 }
 
 .visualizar {
-  min-height: 85vh; 
+  min-height: 60vh;
+  max-height: 80vh;
   overflow-y: auto;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilização das mensagens */
 .mensagem {
   background-color: #007bff;
   color: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 10px;
+  padding: 10px 15px;
   margin-bottom: 10px;
-  max-width: 70%;
+  max-width: 80%;
+}
+
+.mensagem-enviada {
+  background-color: #5bc0de;
+}
+
+/* Estilização do nome do remetente */
+.nome-remetente {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilização do timestamp das mensagens */
+.timestamp {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Estilização das mensagens enviadas pelo usuário */
+.mensagem-enviada {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+/* Estilização das mensagens recebidas de outras pessoas */
+.mensagem-recebida {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+/* Estilização do nome do remetente nas mensagens recebidas */
+.mensagem-recebida .nome-remetente {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilização do timestamp nas mensagens recebidas */
+.mensagem-recebida .timestamp {
+  font-size: 12px;
+  color: #777;
 }
