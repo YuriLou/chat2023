@@ -67,25 +67,28 @@
                                 });
 
                         // receber de forma assincrona
-                        function receber() {
-                                fetch("actions/ler.php")
-                                        .then(function(resposta) {
-                                                return resposta.json();
-                                        })
-                                        .then(function(resposta) {
-                                                resposta.forEach(function(r) {
-                                                        let div=document.createElement('div');
-                                                        div.innerHTML += `<strong>Nome: ${r.nome}</strong><br>${r.mensagem}`;
-                                                        rolar();
-                                                })
 
-                                        })
-
-                        }
-                        setInterval(receber, 30000);
-                        receber();
 
                 }
+
+                function receber() {
+                        fetch("actions/ler.php")
+                                .then(function(resposta) {
+                                        return resposta.json();
+                                })
+                                .then(function(resposta) {
+                                        resposta.forEach(function(r) {
+                                                let div = document.createElement('div');
+                                                div.innerHTML += `<strong>Nome: ${r.nome}</strong><br>${r.mensagem}`;
+                                                chatDiv.appendChild(div);
+                                                rolar();
+                                        })
+
+                                })
+
+                }
+                setInterval(receber, 3000);
+                receber();
         </script>
 </body>
 
