@@ -85,7 +85,7 @@
                         } else {
                             div.classList.add("mensagem", "mensagem-recebida");
                         }
-                        div.innerHTML += `<strong class="nome-remetente">Nome: ${r.nome}</strong><br>${r.mensagem}`;
+                        div.innerHTML += `<strong class="nome-remetente"> ${r.nome}</strong><br>${r.mensagem}`;
                         chatDiv.appendChild(div);
                         id = r.id;
                         rolar();
