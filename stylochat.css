@@ -1,16 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #212121;
   margin: 0;
   padding: 0;
+  background-color: #7E6DD1;
+  background-image: url(./images/canvas2.png);
+  background-size: 110cqh;
+
 }
 
 .container {
   max-width: 800px; 
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color:#333;
   border-radius: 10px;
   
 }
@@ -18,7 +21,7 @@ body {
 .mensagens {
   display: flex;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #333;
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
@@ -33,14 +36,13 @@ body {
 }
 
 .visualizar {
-  min-height: 83vh;
-  max-height: 80vh;
+  min-height: 69.2vh;
+  max-height: 69.2vh;
   overflow-y: auto;
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
-  background-color: #fff;
+  background-color: #000000;
   
 }
 
@@ -70,28 +72,32 @@ body {
 
 /* Estilização das mensagens enviadas pelo usuário */
 .mensagem-enviada {
-  background-color:#8774e1 ;
+  background-color:#7E6DD1 ;
   color: #fff;
   border-radius: 10px;
   padding: 10px 15px;
   margin-bottom: 10px;
-  max-width: 80%;
+  margin-left: auto;
+  max-width: 55%;
 }
 
 /* Estilização das mensagens recebidas de outras pessoas */
 .mensagem-recebida {
-  background-color: #007bff;
-  color: #333;
+  background-color: #414141;
+  color: #f5f5f5;
   border-radius: 10px;
   padding: 10px 15px;
   margin-bottom: 10px;
-  max-width: 80%;
+  margin-right: auto; 
+  width: auto;
+  max-width: 55%;
+
 }
 
 /* Estilização do nome do remetente nas mensagens recebidas */
 .mensagem-recebida .nome-remetente {
   font-weight: bold;
-  color: #333;
+  color: #8774e1;
 }
 
 /* Estilização do timestamp nas mensagens recebidas */
@@ -100,10 +106,32 @@ body {
   color: #777;
 }
 
-.enviar{
-  width: 50px;
-  height: 50px;
-  background-image: url(images/art.png);
-  border-radius: 50px;
+button[type="submit"] {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[type="submit"] .enviar {
+  width: 40px;
+  height: 40px; 
+  background-image: url('./images/enviar2.png'); 
   background-size: cover;
+}
+
+h1 {
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #ffffff; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  text-align: center; /* Centralizar o texto */
+}
+
+a{
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #7E6DD1; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  text-align: center; /* Centralizar o texto */
 }

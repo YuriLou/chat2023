@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(./images/fundo3.jpg);
+    background-image: linear-gradient(to right top, #dd6cb9, #d35fb9, #c853b9, #bb47ba, #ad3cbc, #a23cc0, #953dc3, #873ec7, #7b47cc, #6d4ed0, #5f55d3, #4f5bd5);
 }
 
 
@@ -55,7 +55,7 @@ input[type="text"] {
 }
 
 button:hover {
-    background-color: #3da339;
+    background-color: #DB6AB9;
     color: #fff;
 }
 

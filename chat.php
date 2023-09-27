@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <title>Telegram 2</title>
     <link rel="stylesheet" href="stylochat.css">
 </head>
 
 <body>
 
     <div class="container">
+        <h1>Telegram <a>2</a></h1> <!-- Adicione o título aqui -->
         <form action="actions/recebe.php" method="post">
             <div class="visualizar" id="visualizar"></div>
             <div class="mensagens">
@@ -19,10 +20,14 @@
                 ?>
                 <input type="hidden" name="nome" id="nome" value="<?= $nome ?>">
                 <input type="text" id="mensagem" name="mensagem">
-                <button type="submit"><div class="enviar"></div></button>
+                <button type="submit">
+                    <div class="enviar"></div>
+                </button>
             </div>
         </form>
     </div>
+
+
 
     <script>
         let chatDiv = document.getElementById("visualizar");
@@ -46,9 +51,9 @@
             data.append("nome", nome.value);
 
             fetch("actions/recebe.php", {
-                method: "POST",
-                body: data
-            })
+                    method: "POST",
+                    body: data
+                })
                 .then(function(resposta) {
                     if (!resposta.ok) {
                         alert("não foi possível enviar");
@@ -65,9 +70,9 @@
             let data = new FormData();
             data.append("id", id);
             fetch("actions/ler.php", {
-                method: "POST",
-                body: data
-            })
+                    method: "POST",
+                    body: data
+                })
                 .then(function(resposta) {
                     return resposta.json();
                 })
